@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:background="@drawable/linear_back"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:letterSpacing="0.03"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@id/ll1"
+        android:layout_marginTop="60dp"
+        android:layout_margin="20dp"
+        android:hint="@string/editHint"
+        android:textSize="17sp"
+        android:background="@drawable/edittext_back"
+        android:padding="14dp"
+        android:textColorHint="#7C7A80"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Upload file"
+        android:textSize="18sp"
+        android:letterSpacing="0.08"
+        android:id="@+id/editUploadFile"
+        android:background="@drawable/button_click"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/editUploadFile"
+        android:background="@drawable/button_click"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Retrieve PDFs File"
+        android:letterSpacing="0.08"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnRead"
+        android:onClick="retrievePDFs" />
+
+</RelativeLayout>
